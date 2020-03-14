@@ -78,7 +78,8 @@ After testing on pre-trained models, the aged images are automatically saved to 
 
 ## 7. Face Recognition using DeepFace
 Follow the code in 'Demo.ipynb' for face recognition using DeepFace, which makes use of Keras.
-DeepFace is a deep learning facial recognition system created by Facebook. 
+DeepFace is a deep learning facial recognition system created by Facebook. Face recognition can be used to verify the performance 
+of IPCGAN.
 
 ## 8. Experiment results
 * The aging effect of Dakota Johnson. ![dakota_johnson](images/Dakota_Johnson.jpg)
