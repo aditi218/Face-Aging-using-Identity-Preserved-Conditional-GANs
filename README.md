@@ -58,8 +58,8 @@ or
 ```
 ## 5. Train from scratch
 
-    Firstly, download the pre-trained alexnet model(https://1drv.ms/u/s!AlUWwwOcwDWobkptownyu5fjlfU) and age classfication model(https://1drv.ms/f/s!AlUWwwOcwDWocX-Z0IJft_VbcoQ). Then unzip these files and place model files in checkpoints/pre_trained.
-
+* Firstly, download the pre-trained alexnet model(https://1drv.ms/u/s!AlUWwwOcwDWobkptownyu5fjlfU) and age classfication model(https://1drv.ms/f/s!AlUWwwOcwDWocX-Z0IJft_VbcoQ). Then unzip these files and place model files in checkpoints/pre_trained.
+```
 python age_lsgan_transfer.py \
   --gan_loss_weight=75 \
   --fea_loss_weight=0.5e-4 \
@@ -67,10 +67,11 @@ python age_lsgan_transfer.py \
   --fea_layer_name=conv5 \
   --checkpoint_dir=./checkpoints/age/0_conv5_lsgan_transfer_g75_0.5f-4_a30 \
   --sample_dir=age/0_conv5_lsgan_transfer_g75_0.5f-4_a30 
-
+```
+```
 sh age_lsgan_transfer.py
-
-    You can change the hyperparameters to adapt to your own dataset.
+```
+* You can change the hyperparameters to adapt to your own dataset.
 
 ## 6. Output
 After testing on pre-trained models, the aged images are automatically saved to 'age/0_conv5_lsgan_transfer_g75_0.5f-4_a30/'.
