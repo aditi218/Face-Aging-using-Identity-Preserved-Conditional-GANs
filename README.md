@@ -56,14 +56,30 @@ or
 - Running the script to get aged faces
     python test.py
 ```
-## 5. Output
+## 5. Train from scratch
+
+    Firstly, download the pre-trained alexnet model(https://1drv.ms/u/s!AlUWwwOcwDWobkptownyu5fjlfU) and age classfication model(https://1drv.ms/f/s!AlUWwwOcwDWocX-Z0IJft_VbcoQ). Then unzip these files and place model files in checkpoints/pre_trained.
+
+python age_lsgan_transfer.py \
+  --gan_loss_weight=75 \
+  --fea_loss_weight=0.5e-4 \
+  --age_loss_weight=30 \
+  --fea_layer_name=conv5 \
+  --checkpoint_dir=./checkpoints/age/0_conv5_lsgan_transfer_g75_0.5f-4_a30 \
+  --sample_dir=age/0_conv5_lsgan_transfer_g75_0.5f-4_a30 
+
+sh age_lsgan_transfer.py
+
+    You can change the hyperparameters to adapt to your own dataset.
+
+## 6. Output
 After testing on pre-trained models, the aged images are automatically saved to 'age/0_conv5_lsgan_transfer_g75_0.5f-4_a30/'.
 
-## 6. Face Recognition using DeepFace
+## 7. Face Recognition using DeepFace
 Follow the code in 'Demo.ipynb' for face recognition using DeepFace, which makes use of Keras.
 DeepFace is a deep learning facial recognition system created by Facebook. 
 
-## 7. Experiment results
+## 8. Experiment results
 * The aging effect of Dakota Johnson. ![dakota_johnson](images/Dakota_Johnson.jpg)
 * The aging effect of Chris Colfer.![chris_colfer](images/Chris_Colfer.jpg)
 
