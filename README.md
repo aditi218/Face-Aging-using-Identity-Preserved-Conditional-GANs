@@ -2,8 +2,13 @@
 Age conditional GAN (Age-cGAN) is a GAN-based method for automatic face aging. It was the first GAN to generate high quality synthetic images within required age categories. 
 Eventually, a novel latent vector optimization approach called Identity-Preserved Conditional GAN (IPCGAN) was proposed which allowed Age-cGAN to reconstruct an input face image while preserving the original person’s identity.
 
-This repository gives detailed step-by-step instructions on how to obtain aged faces using IPCGAN, as well as validating the performance of the model through
-face recognition (using DeepFace), which is a well known application of face aging.
+## Problem Statement
+Face aging is of great importance for cross-age recognition and entertainment related applications. However,the lack of labeled faces of the same person across a longage range makes it challenging. Because of different aging speed of different persons, this face aging approach aims at synthesizing a face whose target age lies in some given age group instead of synthesizing a face with a certain age. By grouping faces with target age together, the objective offace aging is equivalent to transferring aging patterns of faces within the target age group to the face whose aged face is to be synthesized. Meanwhile, the synthesized faceshould have the same identity with the input face. 
+
+## Input and Output
+The input to the model is an image (from 'images/test') and the output from the model (in 'age/0_conv5_lsgan_transfer_g75_0.5f-4_a30/') is a set of 5 images where one of them is the input image and the other four are aged faces with class labels: 21-30, 31-40, 41-50 and 50+. The target age here is 50+.
+
+This repository gives detailed step-by-step instructions on how to obtain aged faces using IPCGAN, as well as validating the performance of the model through face recognition (using DeepFace), which is a well known application of face aging.
 
 ![scalars_framework](images/framework.JPG)
 ## Dataset
