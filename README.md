@@ -50,7 +50,8 @@ Cudnn 6.0
 ```
 
 ## 4. Testing on pre-trained models
-* Test images are in images/test, and some training images that belong to 11-20 age group are in images/train.
+* The pre-trained models can be found in the 'checkpoints' folder.
+* Test images are in 'images/test', and some training images that belong to 11-20 age group are in 'images/train'.
 ```
 1) Open jupyter notebook 
     jupyter notebook --ip=127.0.0.1 --port=31337
@@ -63,7 +64,7 @@ or
 ```
 ## 5. Train from scratch
 
-* Firstly, download the pre-trained alexnet model(https://1drv.ms/u/s!AlUWwwOcwDWobkptownyu5fjlfU) and age classfication model(https://1drv.ms/f/s!AlUWwwOcwDWocX-Z0IJft_VbcoQ). Then unzip these files and place model files in checkpoints/pre_trained.
+* Firstly, download the pre-trained alexnet model(https://1drv.ms/u/s!AlUWwwOcwDWobkptownyu5fjlfU) and age classfication model (https://1drv.ms/f/s!AlUWwwOcwDWocX-Z0IJft_VbcoQ). Then unzip these files and place model files in checkpoints/pre_trained.
 ```
 python age_lsgan_transfer.py \
   --gan_loss_weight=75 \
