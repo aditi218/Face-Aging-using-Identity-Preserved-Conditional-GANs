@@ -76,14 +76,14 @@ sh age_lsgan_transfer.py
 ## 6. Output
 After testing on pre-trained models, the aged images are automatically saved to 'age/0_conv5_lsgan_transfer_g75_0.5f-4_a30/'.
 
-## 7. Face Recognition using DeepFace
+## 7. Experiment results
+* The aging effect of Dakota Johnson. ![dakota_johnson](images/Dakota_Johnson.jpg)
+* The aging effect of Chris Colfer.![chris_colfer](images/Chris_Colfer.jpg)
+
+## 8. Face Recognition using DeepFace
 Follow the code in 'Demo.ipynb' for face recognition using DeepFace, which makes use of Keras.
 DeepFace is a deep learning facial recognition system created by Facebook. Face recognition can be used to verify the performance 
 of IPCGAN.
-
-## 8. Experiment results
-* The aging effect of Dakota Johnson. ![dakota_johnson](images/Dakota_Johnson.jpg)
-* The aging effect of Chris Colfer.![chris_colfer](images/Chris_Colfer.jpg)
 
 
 
