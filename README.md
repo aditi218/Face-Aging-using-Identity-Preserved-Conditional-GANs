@@ -47,7 +47,8 @@ Cudnn 6.0
 ## 4. Testing on pre-trained models
 * Test images are in images/test, and some training images that belong to 11-20 age group are in images/train.
 ```
-1) jupyter notebook --ip=127.0.0.1 --port=31337
+1) Open jupyter notebook 
+    jupyter notebook --ip=127.0.0.1 --port=31337
 2) Load test.ipynb
 ```
 or
@@ -56,10 +57,10 @@ or
     python test.py
 ```
 ## 5. Output
-After testing on pre-trained models, the aged images obtained from 'images/test' is automatically saved in 'age/0_conv5_lsgan_transfer_g75_0.5f-4_a30/'.
+After testing on pre-trained models, the aged images are automatically saved to 'age/0_conv5_lsgan_transfer_g75_0.5f-4_a30/'.
 
 ## 6. Face Recognition using DeepFace
-Follow the code in 'Demo.html' for face recognition using DeepFace, which makes use of Keras.
+Follow the code in 'Demo.ipynb' for face recognition using DeepFace, which makes use of Keras.
 DeepFace is a deep learning facial recognition system created by Facebook. 
 
 ## 7. Experiment results
