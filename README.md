@@ -88,7 +88,7 @@ After testing on pre-trained models, the aged images are automatically saved to 
 
 ## 8. Face Recognition using DeepFace
 Follow the code in 'Demo.ipynb' for face recognition using DeepFace, which makes use of Keras.
-* Download pre-trained weights from https://github.com/swghosh/DeepFace/releases and place it in the acgan folder.
+* Download pre-trained weights from https://github.com/swghosh/DeepFace/releases (Download 'VGGFace2_DeepFace_weights_val-0.9034.h5.zip' and extract it) and place it in the acgan folder.
 
 DeepFace is a deep learning facial recognition system created by Facebook. Face recognition can be used to verify the performance 
 of IPCGAN.
