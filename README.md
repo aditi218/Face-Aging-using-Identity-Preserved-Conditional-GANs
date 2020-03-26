@@ -84,7 +84,7 @@ After testing on pre-trained models, the aged images are automatically saved to 
 
 ## 7. Experiment results
 * The aging effect of Dakota Johnson. ![dakota_johnson](images/Dakota_Johnson.jpg)
-* The aging effect of Chris Colfer. ![chris_colfer](images/Chris_Colfer.jpg)
+* The aging effect of Chris Colfer. <br> ![chris_colfer](images/Chris_Colfer.jpg)
 
 ## 8. Face Recognition using DeepFace
 Follow the code in 'Demo.ipynb' for face recognition using DeepFace, which makes use of Keras.
